@@ -1,9 +1,10 @@
 import { AppConfigService } from '@/service/appconfigservice';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { Component, computed, inject, PLATFORM_ID } from '@angular/core';
+import { Component, PLATFORM_ID, computed, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { $t, updatePreset, updateSurfacePalette } from '@primeng/themes';
 import Aura from '@primeng/themes/aura';
+import Ignite from '@primeng/themes/ignite';
 import Lara from '@primeng/themes/lara';
 import Material from '@primeng/themes/material';
 import Nora from '@primeng/themes/nora';
@@ -16,6 +17,7 @@ import { ToggleSwitchModule } from 'primeng/toggleswitch';
 
 const presets = {
     Aura,
+    Ignite,
     Material,
     Lara,
     Nora
